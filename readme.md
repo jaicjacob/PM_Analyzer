@@ -14,7 +14,7 @@ PM Analyzer is an application designed to fetch and analyze air quality data fro
 **1. Clone the repository:**
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/jaicjacob/PM_Analyzer.git)
 cd pm_analyzer
 
 ```
