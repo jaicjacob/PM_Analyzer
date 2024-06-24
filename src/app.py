@@ -132,7 +132,7 @@ class PM_Analyzer:
                     )
 
 
-if __name__ == "__main__":
+def main():
     import uvicorn
 
     try:
@@ -140,3 +140,7 @@ if __name__ == "__main__":
         uvicorn.run(service.app, host="0.0.0.0", port=8000)
     except KeyboardInterrupt:
         pass
+
+
+if __name__ == "__main__":
+    main()
