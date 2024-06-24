@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "PMAnalyzer"
+version = "0.1.0"
+description = "PM2.5 Analyzer"
+authors = ["Jaic Jacob Philip <jaicjacob@gmail.com>"]
+packages = [{include = "src"}]
+
+[tool.poetry.scripts]
+service = "src.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+pydantic = "^2.7.4"
+redis = "^5.0.6"
+redis-om = "^0.3.1"
+
+[tool.poetry.group.winService.dependencies]
+pywin32 = "^306"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
